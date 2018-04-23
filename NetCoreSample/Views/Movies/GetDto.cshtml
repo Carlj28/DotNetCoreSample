@@ -1,0 +1,31 @@
+﻿@model System.Collections.Generic.IEnumerable<NetCoreSample.DTO.MoviesDTO>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<body>
+    <table>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.Title</td>
+                <td>@movie.Description</td>
+                <td>@movie.DateOfRelease</td>
+                <td>@movie.Genre</td>
+            </tr>
+            foreach (var genre in movie.Genres)
+            {
+
+                <tr>
+                    <td>@genre</td>
+                </tr>
+            }
+        }
+    </table>
+</body>
+</html>

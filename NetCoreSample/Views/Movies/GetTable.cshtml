@@ -1,0 +1,21 @@
+﻿@model System.Collections.Generic.IEnumerable<NetCoreSample.Models.Movie>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Your favorite movie is:</title>
+</head>
+<body>
+<table>
+    @foreach (var movie in @Model)
+    {
+    <tr>
+        <td>@movie.Id</td>
+        <td>@movie.Title</td>
+        <td>@movie.Description</td>
+        <td>@movie.DateOfRelease</td>
+        <td>@movie.Genre</td>
+    </tr>
+    }
+</table>
+</body>
+</html>
