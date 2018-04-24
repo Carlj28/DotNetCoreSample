@@ -1,1 +1,1 @@
-# DotNetCoreSample
+# .Net Core Sample APP
